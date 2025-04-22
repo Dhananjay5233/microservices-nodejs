@@ -38,9 +38,8 @@ Start MongoDB and RabbitMQ containers
 
     ✅ 1. Create Admin (One-Time Setup)
     API
-    bash
-    Copy
-    Edit
+    
+    
     POST /auth/create
     # Payload
     json
@@ -117,9 +116,9 @@ Start MongoDB and RabbitMQ containers
     Service:
     wallet-service:
 
-    Connects to that user’s DB
+        - Connects to that user’s DB
 
-    Increases balance in wallet
+        - Increases balance in wallet
 
     ✅ 6. Create Transaction
     API
@@ -136,11 +135,11 @@ Start MongoDB and RabbitMQ containers
     Service:
     transaction-service:
 
-    Fetches service charge for the user
+        - Fetches service charge for the user
 
-    Creates a new transaction record
+        - Creates a new transaction record
 
-    Publishes transaction data to transaction_queue in RabbitMQ
+        - Publishes transaction data to transaction_queue in RabbitMQ
 
     ✅ 7. Process Transaction (Background)
     Worker:
