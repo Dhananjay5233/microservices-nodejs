@@ -187,3 +187,44 @@ Start MongoDB and RabbitMQ containers
         makefile
 
         Authorization: Bearer <token>
+
+
+🐳 Docker Setup for Local Development
+    📁 Project Structure
+
+    microservices-project/
+    ├── auth-service/
+    │   ├── Dockerfile
+    │   ├── .env
+    ├── user-service/
+    │   ├── Dockerfile
+    │   ├── .env
+    ├── wallet-service/
+    ├── service-charge-service/
+    ├── transaction-service/
+    ├── queue-service/
+    ├── cron-service/
+    ├── dummy-bank-api/
+    ├── api-gateway/
+    ├── docker-compose.yml
+    └── README.md
+
+
+🛠 Dockerfile (for each service)
+
+    - Each service has its own Dockerfile like this:
+
+
+    # Dockerfile
+    FROM node:18
+
+    WORKDIR /app
+
+    COPY . .
+
+    RUN npm install
+
+    EXPOSE 5001  # Change per service
+
+    CMD ["npm", "start"]
+
