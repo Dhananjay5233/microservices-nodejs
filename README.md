@@ -1,5 +1,10 @@
 # 🧩 Microservices Node.js Project
 
+> ⚠️ **IMPORTANT:** After creating a transaction, you must restart the `queue-service` to process it.  
+> Run this command in your terminal:  
+> **`docker compose restart queue-service`**
+
+
 This project demonstrates a microservices-based architecture using *Node.js, **Express, **MongoDB, **RabbitMQ, and **Docker*. It includes:
 
 - *Transaction Service* – Handles transaction creation and status.
