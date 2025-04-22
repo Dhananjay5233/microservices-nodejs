@@ -320,3 +320,13 @@ services:
 
 volumes:
   mongo_data:
+
+🔐 Default RabbitMQ Login Credentials
+URL for Management UI - http://localhost:15672
+
+Username: guest
+Password: guest
+
+You’ll see the RabbitMQ admin dashboard where you can monitor queues, exchanges, and messages 🎉
+
+
