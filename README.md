@@ -165,13 +165,13 @@ Start MongoDB and RabbitMQ containers
     ✅ What Happens Behind the Scenes
 
     Step	Service	                Logic
-    1	    auth-service	        Creates and logs in admin
-    2	    user-service	        Auto-generates userId and DB
-    3	    wallet-service	        Adds funds to user wallet DB
-    4	    service-charge-service	Assigns dynamic slab-based charges
-    5	    transaction-service	    Creates transaction, pushes to queue
-    6	    queue-service	        Consumes queue, updates wallet, calls dummy bank API
-    7	    cron-service	        Changes transaction from "awaited" to "success" periodically
+    1	        auth-service	        Creates and logs in admin
+    2	        user-service	        Auto-generates userId and DB
+    3	        wallet-service	        Adds funds to user wallet DB
+    4	        service-charge-service	Assigns dynamic slab-based charges
+    5	        transaction-service	    Creates transaction, pushes to queue
+    6	        queue-service	        Consumes queue, updates wallet, calls dummy bank API
+    7	        cron-service	        Changes transaction from "awaited" to "success" periodically
 
     🔐 Secured Routes (Require Token)
         /users
