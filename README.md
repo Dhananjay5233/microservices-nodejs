@@ -169,7 +169,7 @@ Start MongoDB and RabbitMQ containers
     2	        user-service	        Auto-generates userId and DB
     3	        wallet-service	        Adds funds to user wallet DB
     4	        service-charge-service	Assigns dynamic slab-based charges
-    5	        transaction-service	    Creates transaction, pushes to queue
+    5	        transaction-service	  Creates transaction, pushes to queue
     6	        queue-service	        Consumes queue, updates wallet, calls dummy bank API
     7	        cron-service	        Changes transaction from "awaited" to "success" periodically
 
